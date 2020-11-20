@@ -11,9 +11,9 @@
 
 ### Repositório de código
 
-1) Link para o repositório do GitHub: https://github.com/fpro-feup/public/recitas/project.md
+1) Link para o repositório do GitHub: https://github.com/fpro-feup/public/blob/master/recitas/project.md
 
-2) Adicionar o prof. da prática:
+2) Adicionar o Prof. da prática:
 
 - https://github.com/AfonsoSalgadoSousa
 - https://github.com/jlopes60
@@ -29,7 +29,7 @@ Ou seja, se ele ficar junto à parede, a pessoa precisa de reiniciar o jogo. Est
 
 ### UI
 
-![UI](https://github.com/fpro-feup/public/blob/master/assigns/ui.png)
+![UI](https://github.com/fpro-feup/public/blob/master/recitas/ui.png)
 
 ### Pacotes
 
