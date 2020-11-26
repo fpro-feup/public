@@ -18,7 +18,7 @@ def is_pangram(s):
     """
     Function to check if all elements are present or not
     """
-    return set(asc_lower) - set(s.lower()) == set([])
+    return set(asc_lower) - set(s.lower()) == set()
 
 
 # tests
