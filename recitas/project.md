@@ -11,9 +11,9 @@
 
 ### Repositório de código
 
-1) Link para o repositório do GitHub: https://github.com/fpro-feup/public/blob/master/recitas/project.md
+1) Link para o repositório do GitHub: https://github.com/@author/xxx
 
-2) Adicionar o Prof. da prática:
+2) Adicionar, como colaborador com permissão de leitura (*role read*), o Prof. da prática:
 
 - https://github.com/AfonsoSalgadoSousa
 - https://github.com/jlopes60
