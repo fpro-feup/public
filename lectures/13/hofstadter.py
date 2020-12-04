@@ -13,18 +13,18 @@ https://www.geeksforgeeks.org/mutual-recursion-example-hofstadter-female-male-se
 
 # female function
 def h_female(n):
-    if n < 0:
-        return
+    if n == 0:
+        return 1
     else:
-        return 1 if n == 0 else (n - h_male(h_female(n-1)))
+        return n - h_male(h_female(n-1))
 
 
 # male function
 def h_male(n):
-    if n < 0:
-        return
+    if n == 0:
+        return 0
     else:
-        return 0 if n == 0 else (n - h_female(h_male(n-1)))
+        return n - h_female(h_male(n-1))
 
 
 # Driver code

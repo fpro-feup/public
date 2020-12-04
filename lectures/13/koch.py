@@ -18,15 +18,13 @@ def koch(pen, order, size):
         # The base case is just a straight line
         pen.forward(size)
     else:
-        koch(pen, order-1, size/3)
-        # Go 1/3 of the way
-        pen.left(60)
-        koch(pen, order-1, size/3)
+        koch(pen, order-1, size/3)  # recursive call
+        pen.left(60)  # Go 1/3 of the way
+        koch(pen, order-1, size/3)  # recursive call
         pen.right(120)
-        koch(pen, order-1, size/3)
+        koch(pen, order-1, size/3)  # recursive call
         pen.left(60)
-        # recursive call
-        koch(pen, order-1, size/3)
+        koch(pen, order-1, size/3)  # recursive call
 
 # a better version
 #def koch(pen, order, size):
@@ -34,7 +32,7 @@ def koch(pen, order, size):
 #        pen.forward(size)
 #    else:
 #        for angle in [60, -120, 60, 0]:
-#            koch(pen, order-1, size/3)
+#            koch(pen, order-1, size/3)  # recursive call
 #            pen.left(angle)
 
 # get a pen
@@ -53,11 +51,11 @@ tess.penup()
 tess.goto(-300, -100)
 tess.pendown()
 
-#koch(tess, 0, 600)
+koch(tess, 0, 600)
 #koch(tess, 1, 600)
 #koch(tess, 2, 600)
 #koch(tess, 3, 600)
-koch(tess, 4, 600)
+#koch(tess, 4, 600)
 
 canvas.mainloop()     # Wait for user to close window
 turtle.bye()
