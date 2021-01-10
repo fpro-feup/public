@@ -22,17 +22,17 @@ testdata = range(SIZE)
 
 print('...', flush=True)
 
-t0 = time.clock()
+t0 = time.perf_counter()
 my_result = do_my_sum(testdata)
-t1 = time.clock()
+t1 = time.perf_counter()
 
 print("my_result    = {0} (time taken = {1:.4f} seconds)"
       .format(my_result, t1-t0))
 
 print('...', flush=True)
 
-t2 = time.clock()
+t2 = time.perf_counter()
 their_result = sum(testdata)
-t3 = time.clock()
+t3 = time.perf_counter()
 print("their_result = {0} (time taken = {1:.4f} seconds)"
       .format(their_result, t3-t2))
