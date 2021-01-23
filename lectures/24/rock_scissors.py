@@ -11,13 +11,14 @@ import random
 from enum import IntEnum
 
 
-# Describe an Action With enum.IntEnum
+# Describe an action with enum.IntEnum
 class Action(IntEnum):
     Rock = 0
     Paper = 1
     Scissors = 2
     Lizard = 3
     Spock = 4
+
 
 # Describe more complex rules with a dictionary
 victories = {
@@ -28,6 +29,7 @@ victories = {
     Action.Spock: [Action.Scissors, Action.Rock]
 }
 
+
 # Take in user input with input()
 def get_user_selection():
     choices = [f"{action.name}[{action.value}]" for action in Action]
@@ -36,13 +38,15 @@ def get_user_selection():
     action = Action(selection)
     return action
 
-# Make the Computer Choose
+
+# Make the computer choose
 def get_computer_selection():
     selection = random.randint(0, len(Action) - 1)
     action = Action(selection)
     return action
 
-# Determine a Winner based on players' choices
+
+# Determine a winner based on players' choices
 def determine_winner(user_action, computer_action):
     defeats = victories[user_action]
     if user_action == computer_action:
