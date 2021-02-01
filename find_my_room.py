@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Sun Jan 31 16:31:54 2021
 
-This is a temporary script file.
+@author: jlopes
+
+This script finds the room that a student should go to to take an FPRO test, given the students distribution.
+
+You may need to install the 'unidecode' package.
 """
 
 student_dist = { 
